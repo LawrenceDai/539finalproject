@@ -6,8 +6,9 @@ body {
 
 /* map */
 #map {
-    width: 100%;
+    width: 90%;
     aspect-ratio: 1/1;
+    margin: auto;
 }
 
 /* skip to main */
@@ -43,17 +44,19 @@ header h1 {
 
 /* nav bar */
 nav {
-    padding: 10px;
+    padding: 10px 0;
+    width: 100%;
 }
 
 nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 nav a {
+    padding: 5px;
     color: white;
     text-decoration: none;
 }
@@ -73,6 +76,17 @@ main {
 
 h2 {
     font-weight: bold;
+    padding-bottom: 10px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+/* footer */
+footer {
+    padding: 20px;
+    text-align: center;
 }
 
 /* back to top */
@@ -80,11 +94,14 @@ h2 {
     display: none;
     position: fixed;
     right: 0;
-    bottom: 1em;
-    background-color: #E5E1EE;
-    padding: 0.5em;
-    border: solid black 1px;
-    border-radius: 5px;
+    bottom: 10px;
+    background-color: #E60012;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 65px;
+    text-wrap: wrap;
 }
 
 /* reduced motion */
@@ -95,10 +112,39 @@ h2 {
 
 /* tablet view */
 @media screen and (min-width: 768px) {
+    nav ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
+    main {
+        padding: 20px 100px;
+    }
+
+    #map {
+        width: 100%;
+        height: 500px;
+    }
+
+    .back-to-top {
+        width: auto;
+        bottom: 20px;
+    }
 }
 
 /* Desktop view */
 @media screen and (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    nav {
+        width: auto;
+        padding-right: 20px;
+    }
+
+    main {
+        padding: 20px 200px;
+    }
 }
