@@ -21,9 +21,8 @@ const marker = new ol.layer.Vector({
     }),
     style: new ol.style.Style({
         image: new ol.style.Icon ({
-            crossOrigin: 'anonymous',
             color: 'rgb(230, 0, 18)',
-            src: '../images/dot.svg',
+            src: 'images/dot.svg',
         })
     })
 });
