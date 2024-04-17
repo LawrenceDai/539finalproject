@@ -6,7 +6,7 @@ const map = new ol.Map({
     }), 
   ],
   view: new ol.View({
-    center: ol.proj.fromLonLat([135.753718652, 34.9686444587]),
+    center: ol.proj.fromLonLat([135.756394, 34.969773]),
     zoom: 8,
   }),
 });
@@ -15,7 +15,7 @@ const marker = new ol.layer.Vector({
     source: new ol.source.Vector({
         features: [
             new ol.Feature({
-                geometry: new ol.geom.Point(ol.proj.fromLonLat([135.753718652, 34.9686444587])),
+                geometry: new ol.geom.Point(ol.proj.fromLonLat([135.756394, 34.969773])),
             })
         ]
     }),
