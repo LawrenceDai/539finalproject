@@ -22,22 +22,79 @@
         </nav>
     </header>
     <main id="main">
-        <h2>List of Nintendo Consoles</h2>
-        <div>Sort by: 
-            <button>Name</button>
-            <button>Release Date</button>
-            <button>Units Shipped</button>
+        <h2>List of Nintendo Home Consoles</h2>
+        <div class="sort-list">
+            <p>Sort by:</p>
+            <button id="name" class="sort">Name</button>
+            <button id="release" class="sort">Release Date</button>
+            <button id="sold" class="sort">Units Sold</button>
         </div>
-        <p>
-            1973–1978: Early video games and Color TV-Game<br>
-            1979–1987: Game and Watch, arcade games, and Nintendo Entertainment System<br>
-            1988–1992: Game Boy and Super Nintendo Entertainment System<br>
-            1993–1998: Nintendo 64, Virtual Boy, and Game Boy Color<br>
-            1999–2003: Game Boy Advance and GameCube<br>
-            2004–2009: Nintendo DS and Wii<br>
-            2010–2016: Nintendo 3DS, Wii U, and mobile ventures<br>
-            2017–present: Nintendo Switch and expansion to other media
-        </p>
+
+        <div id="console-list">
+            <div class="section" data-name="Color TV-Game" data-release="1977" data-sold="3">
+                <h3>Color TV-Game</h3>
+                <img src="images/color_tv_15.jpg" alt="Nintendo Color TV-Game 15">
+                <p>Release date: June 1, 1977</p>
+                <p>Units sold: 3 million</p>
+                <p>The Color TV-Game is the first video game system ever made by Nintendo. The system was released as a series of five dedicated home video game consoles between 1977 and 1983 in Japan only. Nintendo sold three million units of the first four models: one million units of each of the first two models, Color TV-Game 6 and 15; and half a million units of each of the next two models, Block Breaker and Racing 112. The Color TV-Game series has the highest sales figures of all the first generation of video game consoles.</p>
+            </div>
+            
+            <div class="section" data-name="Nintendo Entertainment System" data-release="1983" data-sold="61.91">
+                <h3>Nintendo Entertainment System</h3>
+                <img src="images/NES_console.png" alt="Nintendo Entertainment System with a controller">
+                <p>Release date: July 15, 1983</p>
+                <p>Units sold: 61.91 million</p>
+                <p>The Nintendo Entertainment System (NES) is an 8-bit third-generation home video game console produced by Nintendo. It was first released in Japan in 1983 as the Family Computer (FC), commonly referred to as Famicom. It was redesigned to become the NES, which was released in American test markets on October 18, 1985, and was soon fully launched in North America and other regions.</p>
+            </div>
+
+            <div class="section" data-name="Super Nintendo Entertainment System" data-release="1990" data-sold="49.10">
+                <h3>Super Nintendo Entertainment System</h3>
+                <img src="images/SNES_console.jpg" alt="Super Nintendo Entertainment System with a controller">
+                <p>Release date: November 21, 1990</p>
+                <p>Units sold: 49.10 million</p>
+                <p>The Super Nintendo Entertainment System, commonly shortened to Super Nintendo, Super NES or SNES, is a 16-bit home video game console developed by Nintendo that was released in 1990 in Japan and South Korea, 1991 in North America, 1992 in Europe and Oceania and 1993 in South America. In Japan, it is called the Super Famicom (SFC). In South Korea, it is called the Super Comboy and was distributed by Hyundai Electronics. The system was released in Brazil on August 30, 1993, by Playtronic. Although each version is essentially the same, several forms of regional lockout prevent cartridges for one version from being used in other versions.</p>
+            </div>
+
+            <div class="section" data-name="Nintendo 64" data-release="1996" data-sold="32.93">
+                <h3>Nintendo 64</h3>
+                <img src="images/N64_console.jpg" alt="Nintendo 64 with a controller">
+                <p>Release date: June 23, 1996</p>
+                <p>Units sold: 32.93 million</p>
+                <p>The Nintendo 64 (N64) is a home video game console developed by Nintendo. It was released on June 23, 1996, in Japan; on September 29, 1996, in North America; and on March 1, 1997, in Europe and Australia. The successor to the Super Nintendo Entertainment System, it was the last major home console to use cartridges as its primary storage format until the Nintendo Switch in 2017. As a fifth-generation console, the Nintendo 64 primarily competed with the Sony PlayStation and the Sega Saturn.</p>
+            </div>
+
+            <div class="section" data-name="GameCube" data-release="2001" data-sold="21.74">
+                <h3>GameCube</h3>
+                <img src="images/GameCube_console.jpg" alt="GameCube with a controller">
+                <p>Release date: September 14, 2001</p>
+                <p>Units sold: 21.74 million</p>
+                <p>The GameCube is a home video game console developed and marketed by Nintendo. It was released in Japan on September 14, 2001, in North America on November 18, 2001, in Europe on May 3, 2002, and in Australia on May 17, 2002. It is the successor to the Nintendo 64 (N64) and the predecessor to the Wii. As a sixth-generation console, the GameCube primarily competed with the PlayStation 2 and Xbox.</p>
+            </div>
+
+            <div class="section" data-name="Wii" data-release="2006" data-sold="101.63">
+                <h3>Wii</h3>
+                <img src="images/Wii_console.jpg" alt="Wii console with a controller">
+                <p>Release date: November 19, 2006</p>
+                <p>Units sold: 101.63 million</p>
+                <p>The Wii (/'wi:/, WEE) is a home video game console developed and marketed by Nintendo. It was released on November 19, 2006 in North America, and in December 2006 for most other regions of the world. It is Nintendo's fifth major home game console, following the GameCube and is a seventh-generation console alongside Microsoft's Xbox 360 and Sony's PlayStation 3.</p>
+            </div>
+
+            <div class="section" data-name="Wii U" data-release="2012" data-sold="13.56">
+                <h3>Wii U</h3>
+                <img src="images/Wii_U_Console.png" alt="Wii U console with Wii U GamePad">
+                <p>Release date: November 18, 2012</p>
+                <p>Units sold: 13.56 million</p>
+                <p>The Wii U (/ˌwi: 'ju:/; WEE YOO) is a home video game console developed by Nintendo as the successor to the Wii. Released in late 2012, it is the first eighth-generation video game console and competed with Microsoft's Xbox One and Sony's PlayStation 4.</p>
+            </div>
+
+            <div class="section" data-name="Nintendo Switch" data-release="2017" data-sold="139.36">
+                <h3>Nintendo Switch</h3>
+                <img src="images/Nintendo_Switch.jpg" alt="Nintendo switch console with Joy-Con attached">
+                <p>Release date: March 3, 2017</p>
+                <p>Units sold: 139.36 million</p>
+                <p>The Nintendo Switch is a video game console developed by Nintendo and released worldwide in most regions on March 3, 2017. Released in the middle of the eighth generation of home consoles, the Switch succeeded the Wii U and competed with Microsoft's Xbox One and Sony's PlayStation 4; it also competes with the ninth-generation consoles, Microsoft's Xbox Series X/S and Sony's PlayStation 5.</p>
+            </div>
+        </div>
     </main>
     <footer>
         Lawrence Dai<br>
@@ -45,5 +102,6 @@
     </footer>
     <button class="back-to-top">Back To Top</button>
     <script src="js/back_top.js"></script>
+    <script src="js/sort.js"></script>
 </body>
 </html>

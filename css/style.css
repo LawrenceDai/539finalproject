@@ -2,6 +2,7 @@
 /* body */
 body {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 }
 
 /* map */
@@ -75,12 +76,57 @@ main {
 }
 
 h2 {
+    font-size: 20px;
     font-weight: bold;
-    padding-bottom: 10px;
+    margin: 10px 0;
 }
 
 p {
-    padding-bottom: 10px;
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+    max-width: 550px;
+    display: block;
+    margin: auto;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.sort-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sort-list p {
+    display: block;
+    width: 100%;
+}
+
+.sort {
+    background-color: #E60012;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+.sort:active {
+    background-color: gray;
+    color: white;
+}
+
+#console-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.section h3 {
+    font-size: 19px;
+    font-weight: bold;
 }
 
 /* footer */
@@ -126,10 +172,18 @@ footer {
         height: 500px;
     }
 
-    .back-to-top {
+    .sort-list p {
         width: auto;
-        bottom: 20px;
     }
+
+    .sort-list {
+        justify-content: flex-start;
+    }
+
+    .sort {
+        margin: 0 20px;
+    }
+
 }
 
 /* Desktop view */
@@ -146,5 +200,13 @@ footer {
 
     main {
         padding: 20px 15vw;
+    }
+}
+
+/* Devices that can hover */
+@media screen and (hover: hover) {
+    a:hover, button:hover {
+        background-color: gray;
+        color: white;
     }
 }
