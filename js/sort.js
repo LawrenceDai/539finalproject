@@ -1,9 +1,5 @@
 var console_list = Array.from(document.querySelector("#console-list").children)
 
-for (const child of console_list) {
-    console.log(child.dataset.name);
-}
-
 // var for sorted and order
 var name_sort = false;
 var release_sort = false;
