@@ -125,9 +125,16 @@ img {
     flex-direction: column;
 }
 
+.game-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
 .section h3 {
     font-size: 19px;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 /* footer */
@@ -185,6 +192,9 @@ footer {
         margin: 0 20px;
     }
 
+    .game-list {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* Desktop view */
@@ -201,6 +211,10 @@ footer {
 
     main {
         padding: 20px 15vw;
+    }
+
+    .game-list {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
