@@ -9,6 +9,9 @@ const map = new ol.Map({
     center: ol.proj.fromLonLat([135.756394, 34.969773]),
     zoom: 8,
   }),
+  interactions: ol.interaction.defaults.defaults({
+    onFocusOnly: false
+  }),
 });
 
 const marker = new ol.layer.Vector({
